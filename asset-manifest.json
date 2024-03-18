@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.239fc7fd.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.6c6141e1.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.6c6141e1.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.bc6b0371.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.bc6b0371.js.map",
+    "static/js/2.c7e1e596.chunk.js": "/portfolio-website/static/js/2.c7e1e596.chunk.js",
+    "static/js/2.c7e1e596.chunk.js.map": "/portfolio-website/static/js/2.c7e1e596.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.5ea6ef40c9a6e34b59f32667060a9ff4.js": "/portfolio-website/precache-manifest.5ea6ef40c9a6e34b59f32667060a9ff4.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/main.239fc7fd.chunk.css.map": "/portfolio-website/static/css/main.239fc7fd.chunk.css.map",
+    "static/js/2.c7e1e596.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.c7e1e596.chunk.js.LICENSE.txt",
+    "static/media/BabyLizardsScreenshot.png": "/portfolio-website/static/media/BabyLizardsScreenshot.1d9a9a61.png",
+    "static/media/BriannaMcDonaldDissertation.pdf": "/portfolio-website/static/media/BriannaMcDonaldDissertation.ba90139b.pdf",
+    "static/media/Resume.pdf": "/portfolio-website/static/media/Resume.17d374fa.pdf",
+    "static/media/SobelScreenshot.png": "/portfolio-website/static/media/SobelScreenshot.79501f3f.png",
+    "static/media/ToDoListGif.gif": "/portfolio-website/static/media/ToDoListGif.a4ec4d6f.gif",
+    "static/media/background.png": "/portfolio-website/static/media/background.2e6e4f69.png",
+    "static/media/calculatorGif.gif": "/portfolio-website/static/media/calculatorGif.75a53ff2.gif",
+    "static/media/covidGif.gif": "/portfolio-website/static/media/covidGif.9ec3576b.gif",
+    "static/media/cssart.jpg": "/portfolio-website/static/media/cssart.949a49b4.jpg",
+    "static/media/gdmcGif.gif": "/portfolio-website/static/media/gdmcGif.0887e2e7.gif",
+    "static/media/hackFrostGif.gif": "/portfolio-website/static/media/hackFrostGif.e2cf43dd.gif",
+    "static/media/honours.gif": "/portfolio-website/static/media/honours.ea7076df.gif",
+    "static/media/me.png": "/portfolio-website/static/media/me.85a57f91.png",
+    "static/media/megaMarioScreenshot.png": "/portfolio-website/static/media/megaMarioScreenshot.ae2e9e73.png",
+    "static/media/prims.gif": "/portfolio-website/static/media/prims.3f2dee47.gif",
+    "static/media/sqliteLogo.png": "/portfolio-website/static/media/sqliteLogo.7600ca43.png",
+    "static/media/thresholdingScreenshot.png": "/portfolio-website/static/media/thresholdingScreenshot.52b67810.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc6b0371.js",
+    "static/js/2.c7e1e596.chunk.js",
+    "static/css/main.239fc7fd.chunk.css",
+    "static/js/main.6c6141e1.chunk.js"
+  ]
+}
