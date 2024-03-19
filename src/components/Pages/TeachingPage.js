@@ -98,43 +98,45 @@ const TeachingPage = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#fcf8f8" }}>
-      <Box className={`${classes.columnDiv} ${classes.mainDiv}`} id="Teaching">
-        <Typography className={`${classes.aboutText} ${classes.headerText}`}>
-          Teachings
-        </Typography>
-        <Divider classes={{ root: classes.divider }} />
-        <Typography className={classes.bodyText}>
-                {/* <a href="https://link.springer.com/chapter/10.1007/978-3-030-67540-0_30"> */}
-            <ul>
-                <li className={classes.listItem}>
-                    <a href="https://www.mun.ca/" className={classes.link}>Memorial University of Newfoundland</a>
-                    <ul className={classes.subListItem}> 
-                        <li><b>COMP 3200/6980:</b> TA for AI and path finding in JavaScript.</li>
-                        <li><b>COMP 4300:</b> TA for Game programming with C++.</li>
-                        <li><b>COMP 1001:</b> TA for Introduction to programming with Python.</li>
-                        <li><b>ENGI 9818:</b> TA for Software Foundation with Java.</li>
-                        <li><b>ME 6202:</b> TA for Control Systems I.</li>
-                        <li><b>AI 6001:</b> for Game programming with C++.</li>
-                        <li><b>COMP 4300:</b> TA for AI topic course.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://www.cvut.cz/en" className={classes.link}>Czech technical university in Prague</a>
-                    <ul className={classes.subListItem}> 
-                        <li><b>C/C++ COURSE ASSISTANT:</b> TA for C/C++ programming languages in STM32 NUCLEO boards.</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://tabrizu.ac.ir/en" className={classes.link}>University of Tabriz</a>
-                    <ul className={classes.subListItem}> 
-                        <li><b>C/C++ COURSE ASSISTANT:</b> TA for C/C++ programming languages.</li>
-                    </ul>
-                </li>
-            </ul>
-        </Typography>
-      </Box>
-    </div>
+    <section id="Teaching">
+        <div style={{ backgroundColor: "#fcf8f8" }}>
+        <Box className={`${classes.columnDiv} ${classes.mainDiv}`} id="Teaching">
+            <Typography className={`${classes.aboutText} ${classes.headerText}`}>
+            Teachings
+            </Typography>
+            <Divider classes={{ root: classes.divider }} />
+            <Typography className={classes.bodyText}>
+                    {/* <a href="https://link.springer.com/chapter/10.1007/978-3-030-67540-0_30"> */}
+                <ul>
+                    <li className={classes.listItem}>
+                        <a href="https://www.mun.ca/" className={classes.link}>Memorial University of Newfoundland</a>
+                        <ul className={classes.subListItem}> 
+                            <li><b>COMP 3200/6980:</b> TA for AI and path finding in JavaScript.</li>
+                            <li><b>COMP 4300:</b> TA for Game programming with C++.</li>
+                            <li><b>COMP 1001:</b> TA for Introduction to programming with Python.</li>
+                            <li><b>ENGI 9818:</b> TA for Software Foundation with Java.</li>
+                            <li><b>ME 6202:</b> TA for Control Systems I.</li>
+                            <li><b>AI 6001:</b> for Game programming with C++.</li>
+                            <li><b>COMP 4300:</b> TA for AI topic course.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.cvut.cz/en" className={classes.link}>Czech technical university in Prague</a>
+                        <ul className={classes.subListItem}> 
+                            <li><b>C/C++ COURSE ASSISTANT:</b> TA for C/C++ programming languages in STM32 NUCLEO boards.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://tabrizu.ac.ir/en" className={classes.link}>University of Tabriz</a>
+                        <ul className={classes.subListItem}> 
+                            <li><b>C/C++ COURSE ASSISTANT:</b> TA for C/C++ programming languages.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </Typography>
+        </Box>
+        </div>
+    </section>
   );
 };
 

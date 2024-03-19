@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -37,7 +37,30 @@ const NavBar = () => {
       alignItems: "center",
       display: "flex",
     },
+    activeButton: {
+      borderBottom: "3px solid black",
+      // border : "2px solid black",
+      // textDecoration: "underline",
+      fontWeight: "700",
+      background: "inherit",
+      borderRadius: 3,
+      color: "black",
+      height: 40,
+      padding: "0 1rem",
+      margin: "0 0.5rem",
+      [theme.breakpoints.down("xl")]: {
+        fontSize: "1rem",
+      },
+      [theme.breakpoints.down("md")]: {
+        fontSize: "0.9rem",
+      },
+      [theme.breakpoints.down("sm")]: {
+        margin: "1rem 0"
+      },
+    },
+
     button: {
+      fontWeight: "300",
       background: "inherit",
       borderRadius: 3,
       color: "black",
@@ -80,6 +103,38 @@ const NavBar = () => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section[id]");
+      console.log("hi",sections);
+
+      setActiveSection("")
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        console.log(section.id);
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(section.id);
+          console.log("activeSection", section.id);
+          console.log(scrollPosition , sectionTop , scrollPosition , sectionTop , sectionHeight)
+        }
+        console.log("activeSection_ouit",activeSection);
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      console.log("removing")
+    };
+  }, []);
+
+
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
@@ -103,22 +158,22 @@ const NavBar = () => {
 
   const appBarButtons = (
     <Box className={classes.div}>
-      <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
+      <Button className={activeSection === "AboutMe" ? classes.activeButton : classes.button} onClick={() => scrollTo("AboutMe")}>
         About Me
       </Button>
-      <Button className={classes.button} onClick={() => scrollTo("Projects")}>
+      <Button className={activeSection === "Projects" ? classes.activeButton : classes.button} onClick={() => scrollTo("Projects")}>
         Projects
       </Button>
 
-      <Button className={classes.button} onClick={() => scrollTo("Publications")}>
+      <Button className={activeSection === "Publications" ? classes.activeButton : classes.button} onClick={() => scrollTo("Publications")}>
         Publications
       </Button>
 
-      <Button className={classes.button} onClick={() => scrollTo("Teaching")}>
+      <Button className={activeSection === "Teaching" ? classes.activeButton : classes.button} onClick={() => scrollTo("Teaching")}>
         Teaching
       </Button>
 
-      <Button className={classes.button} onClick={() => scrollTo("Contact")}>
+      <Button className={activeSection === "Contact" ? classes.activeButton : classes.button} onClick={() => scrollTo("Contact")}>
         Contact
       </Button>
       <Link href={resumePdf} target="_blank" style={{ textDecoration: "none" }}>

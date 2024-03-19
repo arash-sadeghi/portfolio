@@ -115,25 +115,27 @@ const ContactPage = () => {
   );
 
   return (
-    <Box className={`${classes.columnDiv} ${classes.mainDiv}`}>
-      <Typography className={`${classes.headerText} ${classes.contactText}`}>
-        Contact Me
-      </Typography>
-      <Divider
-        classes={{
-          root: `${classes.divider} ${classes.contactDivider}`,
-        }}
-      />
-      <Box className={classes.rowDiv}>
-        <Typography className={classes.emailText}>
-          Email:&nbsp;&nbsp;&nbsp;&nbsp;
+    <section id="Contact">
+      <Box className={`${classes.columnDiv} ${classes.mainDiv}`}>
+        <Typography className={`${classes.headerText} ${classes.contactText}`}>
+          Contact Me
         </Typography>
-        <Link href="mailto: brmcdonald@mun.ca" className={classes.link}>
-          arash.sadeghi1997@gmail.com
-        </Link>
+        <Divider
+          classes={{
+            root: `${classes.divider} ${classes.contactDivider}`,
+          }}
+        />
+        <Box className={classes.rowDiv}>
+          <Typography className={classes.emailText}>
+            Email:&nbsp;&nbsp;&nbsp;&nbsp;
+          </Typography>
+          <Link href="mailto: brmcdonald@mun.ca" className={classes.link}>
+            arash.sadeghi1997@gmail.com
+          </Link>
+        </Box>
+        {icons}
       </Box>
-      {icons}
-    </Box>
+    </section>
   );
 };
 
