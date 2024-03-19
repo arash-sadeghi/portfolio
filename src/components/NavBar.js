@@ -109,6 +109,15 @@ const NavBar = () => {
       <Button className={classes.button} onClick={() => scrollTo("Projects")}>
         Projects
       </Button>
+
+      <Button className={classes.button} onClick={() => scrollTo("Publications")}>
+        Publications
+      </Button>
+
+      <Button className={classes.button} onClick={() => scrollTo("Teaching")}>
+        Teaching
+      </Button>
+
       <Button className={classes.button} onClick={() => scrollTo("Contact")}>
         Contact
       </Button>

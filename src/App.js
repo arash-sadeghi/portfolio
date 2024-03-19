@@ -7,6 +7,8 @@ import AcademicProjectsPage from "./components/Pages/AcademicProjectsPage/Academ
 import NavBar from "./components/NavBar";
 import FrontPage from "./components/Pages/FrontPage";
 import AboutPage from "./components/Pages/AboutPage";
+import PublicationPage from "./components/Pages/PublicationPage";
+import TeachingPage from "./components/Pages/TeachingPage";
 import ContactPage from "./components/Pages/ContactPage";
 import ProjectsPage from "./components/Pages/ProjectsPage";
 import Footer from "./components/Footer";
@@ -18,6 +20,8 @@ const website = (
     <FrontPage />
     <AboutPage />
     <ProjectsPage />
+    <PublicationPage />
+    <TeachingPage />
     <ContactPage />
     <Footer />
   </div>
