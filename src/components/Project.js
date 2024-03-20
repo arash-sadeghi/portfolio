@@ -110,7 +110,7 @@ const Project = (props) => {
             />
           </CardContent>
         </CardActionArea>
-        {/* <CardActions>
+        <CardActions>
           <Box className={classes.buttonDiv}>
             {props.link1 !== "" ? (
               <Button
@@ -129,7 +129,7 @@ const Project = (props) => {
               </Button>
             ) : null}
           </Box>
-        </CardActions> */}
+        </CardActions>
       </Card>
     </Box>
   );

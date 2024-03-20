@@ -9,7 +9,7 @@ import {
 import * as styles from "../../theme/commonStyles";
 
 import Project from "./../Project";
-// import honoursGif from "./../../images/honours.gif";
+import swarmJS from "./../../images/swarmJS.png";
 
 const ProjectsPage = () => {
   const useStyles = makeStyles({
@@ -240,8 +240,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -251,6 +251,7 @@ const ProjectsPage = () => {
           // icons={p1}
           description={
             <div style={{ lineHeight: "1.2em" }}>
+              {/* https://github.com/m-abdulhak/SwarmJS */}
               <p> <a href="https://github.com/m-abdulhak/SwarmJSm">SwarmJS</a>  is a powerful web-based swarm robotics simulator. While it excels in front-end development using JavaScript, it can sometimes limit developers who prefer other languages or libraries.</p>
 
               <p>To bridge this gap, I designed a collaborative backend using Flask. This backend acts as a bridge, allowing developers to use any programming language to control robots within SwarmJS. Here's how it works:</p>
@@ -267,12 +268,11 @@ const ProjectsPage = () => {
                 SwarmJS: Swarm Robotics Simulation on the Web by Abdullhak, M., Vardy, A., & Sadeghi Amjadi, A. (2023) presented at the International Symposium on Multi-Robot and Multi-Agent Systems (MRS).</p>
             </div>
           }
-          // image={honoursGif}
-          // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
-          // buttonText1="Honours Dissertation PDF"
-          // buttonText2="Project Link"
+          image={swarmJS}
+          imageTitle="SwarmJS Page"
+          link1="https://github.com/m-abdulhak/SwarmJS"
+          link2=""
+          buttonText1="Github Link"
         />
 
         <Project
@@ -297,8 +297,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -323,8 +323,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -341,8 +341,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -365,8 +365,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -401,8 +401,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -421,8 +421,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
@@ -455,8 +455,8 @@ const ProjectsPage = () => {
           }
           // image={honoursGif}
           // imageTitle="SmartVR Pointer gif"
-          // link1={honoursDissertation}
-          // link2="https://drive.google.com/drive/folders/1KgzVXKlIRy6nN61HkxM8ihh7-UNvebQF?usp=sharing"
+          link1=""
+          link2=""
           // buttonText1="Honours Dissertation PDF"
           // buttonText2="Project Link"
         />
