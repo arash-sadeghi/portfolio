@@ -10,6 +10,13 @@ import * as styles from "../../theme/commonStyles";
 
 import Project from "./../Project";
 import swarmJS from "./../../images/swarmJS.png";
+import GoodAI from "./../../images/GoodAI.gif";
+import DroneGazebo from "./../../images/DroneGazebo.png";
+import CTU from "./../../images/CTU.webp";
+import Roboroyal from "./../../images/Roboroyal.png";
+import MUN from "./../../images/MUN.jpeg";
+import METU from "./../../images/METU.gif";
+import BSc from "./../../images/BSc.gif";
 
 const ProjectsPage = () => {
   const useStyles = makeStyles({
@@ -238,11 +245,11 @@ const ProjectsPage = () => {
               <p>Accessibility for Musicians:  Prioritizing accessibility, I containerized the model using Docker and deployed it on a secure Azure Docker Web App. The web app itself utilizes a Flask back-end with a user-friendly HTML front-end. While public access is currently restricted for privacy reasons, the GitHub repository will be made public upon thesis publication.</p>
             </div>
           }
-          // image={honoursGif}
+          image={MUN}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
+          link1="https://github.com/arash-sadeghi/Music-CGAN-app"
           link2=""
-          // buttonText1="Honours Dissertation PDF"
+          buttonText1="GITHUB"
           // buttonText2="Project Link"
         />
 
@@ -295,11 +302,11 @@ const ProjectsPage = () => {
 
             </div>
           }
-          // image={honoursGif}
+          image={GoodAI}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
+          link1="https://www.goodai.com/introducing-goodai-drones-safety-as-a-human-right/"
           link2=""
-          // buttonText1="Honours Dissertation PDF"
+          buttonText1="Webpage"
           // buttonText2="Project Link"
         />
 
@@ -321,12 +328,12 @@ const ProjectsPage = () => {
               <p>By combining these technologies, I facilitated efficient development and testing of drone missions before real-world deployment. This project exemplifies my expertise in software development, robotics engineering, and utilizing ROS and Unreal Engine for effective simulation.</p>
             </div>
           }
-          // image={honoursGif}
+          image={DroneGazebo}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
-          link2=""
-          // buttonText1="Honours Dissertation PDF"
-          // buttonText2="Project Link"
+          link1="https://drive.google.com/file/d/1LqRMP-BjpmqY21ipx7zK9ywz1MEK-VE_/view"
+          link2="https://github.com/arash-sadeghi/GNC_drone"
+          buttonText1="Video"
+          buttonText2="Github"
         />
 
         <Project
@@ -339,12 +346,12 @@ const ProjectsPage = () => {
               Rouček, T., Sadeghi Amjadi, A., Rozsypálek, Z., Broughton, G., Blaha, J., Kusumam, K., & Krajník, T. (2022) Self-Supervised Robust Feature Matching Pipeline for Teach and Repeat Navigation. Sensors, 22(8), 2836.
             </div>
           }
-          // image={honoursGif}
+          image={CTU}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
-          link2=""
-          // buttonText1="Honours Dissertation PDF"
-          // buttonText2="Project Link"
+          link1="https://www.mdpi.com/1424-8220/22/8/2836"
+          link2="https://github.com/rouceto1/VTRL"
+          buttonText1="Publication"
+          buttonText2="Github"
         />
 
         <Project
@@ -363,11 +370,11 @@ const ProjectsPage = () => {
 
             </div>
           }
-          // image={honoursGif}
+          image={Roboroyal}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
+          link1="https://gitlab.com/arash.sadeghi1997/convolutional_bee_tracker_node/-/tree/master?ref_type=heads"
           link2=""
-          // buttonText1="Honours Dissertation PDF"
+          buttonText1="Gitlab"
           // buttonText2="Project Link"
         />
 
@@ -399,12 +406,12 @@ const ProjectsPage = () => {
 
             </div>
           }
-          // image={honoursGif}
+          image={METU}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
-          link2=""
-          // buttonText1="Honours Dissertation PDF"
-          // buttonText2="Project Link"
+          link1="https://drive.google.com/file/d/13LG3wzCgPkP9CDt47O36Iss1K2xBJuWo/view?usp=sharing"
+          link2="https://github.com/arash-sadeghi/RLA"
+          buttonText1="Video Link"
+          buttonText2="GITHUB"
         />
 
         <Project
@@ -453,11 +460,11 @@ const ProjectsPage = () => {
 
             </div>
           }
-          // image={honoursGif}
+          image={BSc}
           // imageTitle="SmartVR Pointer gif"
-          link1=""
+          link1="https://drive.google.com/file/d/13nCrRGSRfLhtQ755hfbioehPDHSVg1GW/view?usp=sharing"
           link2=""
-          // buttonText1="Honours Dissertation PDF"
+          buttonText1="video Link"
           // buttonText2="Project Link"
         />
 

@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/images/GoodAI.mp4
+src/images/MUN.mp4
+src/images/METU.mp4
+src/images/BSC.mp4
