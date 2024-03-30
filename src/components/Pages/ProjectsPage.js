@@ -55,6 +55,72 @@ const ProjectsPage = () => {
 
   const [showMore, setShowMore] = useState(false);
 
+  const jenkinIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:jenkins"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const gazeboIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:gazebo"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const ueIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:unrealengine"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const rosIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:ros"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const AzureIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:azure"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const flaskIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:flask"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+  const dockerIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:docker"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+
+  const pytorchIcon = (
+    <span
+      className="iconify"
+      data-icon="logos:pytorch"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
+
   const reactIcon = (
     <span
       className="iconify"
@@ -145,8 +211,8 @@ const ProjectsPage = () => {
       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
       alt="C++ Icon"
       style={{
-        width: "1.7rem",
-        height: "1.7rem",
+        width: "2rem",
+        height: "2rem",
       }}
     />
   );
@@ -216,10 +282,29 @@ const ProjectsPage = () => {
     </Box>
   );
 
-  const p1 = (
+  const MusicDrummerIcons = (
     <Box className={classes.icons}>
-      {unityIcon}
-      {cSharpIcon}
+      {htmlIcon}{cssIcon}{pythonIcon}{pytorchIcon}{dockerIcon}{flaskIcon}{AzureIcon}
+    </Box>
+  );
+  const swarmJSIcons = (
+    <Box className={classes.icons}>
+      {htmlIcon}{cssIcon}{pythonIcon}{reactIcon}{nodeIcon}
+    </Box>
+  );
+  const goodaiWebIcons = (
+    <Box className={classes.icons}>
+      {htmlIcon}{cssIcon}{pythonIcon}{reactIcon}{nodeIcon}{rosIcon}
+    </Box>
+  );
+  const goodaiDroneIcons = (
+    <Box className={classes.icons}>
+      {cPlusPlusIcon}{pythonIcon}{rosIcon}{ueIcon}{gazeboIcon}
+    </Box>
+  );
+  const CTU1Icons = (
+    <Box className={classes.icons}>
+      {cPlusPlusIcon}{pythonIcon}{rosIcon}{pytorchIcon}{jenkinIcon}
     </Box>
   );
 
@@ -235,7 +320,7 @@ const ProjectsPage = () => {
 
         <Project
           title="MSc Thesis: Generative Drummer Companion (Music & AI)"
-          // icons={p1}
+          icons={MusicDrummerIcons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
               <p>My MSc thesis at Memorial University (MUN) focused on using AI to revolutionize music creation. I developed a generative drummer companion for musicians. Imagine practicing guitar at home and wishing you had a drummer to jam with! This project uses Conditional Generative Adversarial Networks (CGANs) to create drum tracks that adapt to your bass playing.</p>
@@ -255,7 +340,7 @@ const ProjectsPage = () => {
 
         <Project
           title="SwarmJS: Expanding Control with a Flask Backend"
-          // icons={p1}
+          icons={swarmJSIcons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
               {/* https://github.com/m-abdulhak/SwarmJS */}
@@ -284,7 +369,7 @@ const ProjectsPage = () => {
 
         <Project
           title="Client-friendly Drone Control Interface at GoodAI"
-          // icons={p1}
+          icons={goodaiWebIcons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
 
@@ -312,7 +397,7 @@ const ProjectsPage = () => {
 
         <Project
           title="Drone Mission Control & Simulation at GoodAI"
-          // icons={p1}
+          icons={goodaiDroneIcons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
               <p>During my time as a software developer and robotic engineer at <a href="https://www.goodai.com/">GoodAI</a>, I spearheaded a project to streamline drone mission development and testing.</p>
@@ -338,7 +423,7 @@ const ProjectsPage = () => {
 
         <Project
           title="Visual Navigation of Robots"
-          // icons={p1}
+          icons={CTU1Icons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
               This project was part of my duties in <a href="https://www.cvut.cz/en">Czech Technical University</a> in Prague where I worked as PhD researcher. The aim of this project was to combine image processing techniques and Convolutional Neural Networks to extract information from robots camera and navigate robot based on that information. This project required heavy utilization of Pytorch and C++ and resulted in this publication:
@@ -356,7 +441,7 @@ const ProjectsPage = () => {
 
         <Project
           title="Queen Bee Detection & Tracking (PhD Research, CTU Prague)"
-          // icons={p1}
+          icons={CTU1Icons}
           description={
             <div style={{ lineHeight: "1.2em" }}>
 
