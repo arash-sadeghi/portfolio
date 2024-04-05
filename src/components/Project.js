@@ -11,6 +11,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import theme from "../theme/theme";
+import ReactGa from 'react-ga'
 
 const Project = (props) => {
   const useStyles = makeStyles({
@@ -115,7 +116,10 @@ const Project = (props) => {
             {props.link1 !== "" ? (
               <Button
                 className={classes.button}
-                onClick={() => window.open(props.link1)}
+                onClick={() => {window.open(props.link1);
+                  // ReactGa.event({category : 'Button', action : 'clicked on linked 1'+props.title , label : 'clicked on linked 1'+props.title});
+                  // console.log('xl1 clicked for'+props.title);
+                }}
               >
                 {props.buttonText1}
               </Button>

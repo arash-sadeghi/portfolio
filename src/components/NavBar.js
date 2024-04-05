@@ -240,7 +240,7 @@ const NavBar = () => {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Typography variant="h6" className={classes.text}>
-          {"<Arash Sadeghi Amjadi/>"}
+          {"<Arash Sadeghi Amjadi />"}
         </Typography>
         <Hidden smDown>{appBarButtons}</Hidden>
         <Hidden mdUp>{sideDrawer}</Hidden>

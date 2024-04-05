@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -14,6 +14,8 @@ import ProjectsPage from "./components/Pages/ProjectsPage";
 import Footer from "./components/Footer";
 import theme from "./theme/theme";
 
+// import ReactGa from 'react-ga'
+
 const website = (
   <div>
     <NavBar />
@@ -28,6 +30,11 @@ const website = (
 );
 
 function App() {
+//   useEffect(() => {
+//     ReactGa.initialize('G-XN026RCYF8');
+//     ReactGa.pageview("/");
+//   },[])
+  
   return (
     <ThemeProvider theme={theme}>
       <HashRouter basename="/">
