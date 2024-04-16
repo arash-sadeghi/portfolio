@@ -330,7 +330,8 @@ const ProjectsPage = () => {
               <p>Accessibility for Musicians:  Prioritizing accessibility, I containerized the model using Docker and deployed it on a secure Azure Docker Web App. The web app itself utilizes a Flask back-end with a user-friendly HTML front-end. While public access is currently restricted for privacy reasons, the GitHub repository will be made public upon thesis publication.</p>
             </div>
           }
-          image={MUN}
+          // image={MUN}
+          videoSrc="https://www.youtube.com/embed/f2No-GWe9iE"
           // imageTitle="SmartVR Pointer gif"
           link1="https://github.com/arash-sadeghi/Music-CGAN-app"
           link2=""
@@ -387,8 +388,9 @@ const ProjectsPage = () => {
 
             </div>
           }
-          image={GoodAI}
+          // image={GoodAI}
           // imageTitle="SmartVR Pointer gif"
+          videoSrc='https://www.youtube.com/embed/qwbYcFMOwpI'
           link1="https://www.goodai.com/introducing-goodai-drones-safety-as-a-human-right/"
           link2=""
           buttonText1="Webpage"
@@ -491,11 +493,12 @@ const ProjectsPage = () => {
 
             </div>
           }
-          image={METU}
+          // image={METU}
+          videoSrc='https://www.youtube.com/embed/FWl9zttqvvE'
           // imageTitle="SmartVR Pointer gif"
-          link1="https://drive.google.com/file/d/13LG3wzCgPkP9CDt47O36Iss1K2xBJuWo/view?usp=sharing"
+          link1="https://youtu.be/loVxa1s61jY"
           link2="https://github.com/arash-sadeghi/RLA"
-          buttonText1="Video Link"
+          buttonText1="Simulator Software Video Link"
           buttonText2="GITHUB"
         />
 
