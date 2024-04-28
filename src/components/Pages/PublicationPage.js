@@ -129,13 +129,13 @@ const PublicationPage = () => {
                         Sadeghi Amjadi, A., Bilaloğlu, C., Turgut, A. E., Na, S., Şahin, E., Krajník, T., & Arvin, F. (2023). <b>Reinforcement learning-based aggregation for robot swarms.</b> Adaptive Behavior, 10597123231202593.
                     </a>
                 </li>
-                <br/>
+                {/* <br/>
                 <li>
                     <a href="https://ieeesmc2023.org/abstract_files/SMC23_1569_FI.pdf" className={classes.link}>
                         Vardy, A., Amjadi, A. S., & Abdullhak, M. <b>Interaction and Control of Light-Guided Robots.</b>
                     </a>
                 </li>
-                <br/>
+                <br/> */}
                 <li>
                     <a href="https://open.metu.edu.tr/handle/11511/91629" className={classes.link}>
                         Sadeghi Amjadi, A. (2021). <b>Landmark-based Aggregation method for Robot Swarms</b> (Master's thesis, Middle East Technical University).

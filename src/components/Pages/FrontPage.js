@@ -7,7 +7,8 @@ import {
     Hidden,
     makeStyles,
 } from "@material-ui/core";
-import backgroundImage from "./../../images/background.png";
+// import backgroundImage from "./../../images/background.png";
+import backgroundImage from "./../../images/me.png";
 import theme from "../../theme/theme";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
@@ -15,12 +16,12 @@ const FrontPage = () => {
     const useStyles = makeStyles({
         textContainer: {
             backgroundColor: "rgba(255, 255, 255, 0.5)", // Transparent white background
-            padding: "80px 20px",
+            padding: "20px 20px",
             borderRadius: "10px",
             textAlign: "center",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            // justifyContent: "center",
             alignItems: "center",
             position: "absolute",
             top: "50%",
@@ -33,38 +34,25 @@ const FrontPage = () => {
             justifyContent: "center",
             alignItems: "center",
             width: "100%",
-            height: "95vh",
+            height: "100vh",
             backgroundImage: `url(${backgroundImage})`,
-            backgroundPosition: "center top",
+            backgroundPosition: "center 60px",
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "scroll",
             backgroundSize: "cover",
         },
         name: {
             position: "relative",
-            top: "6rem",
+            top: "20rem",
             margin: "0.5rem 1rem",
             fontWeight: "bold",
             [theme.breakpoints.down("xs")]: {
-                top: "4rem",
+                top: "2rem",
                 fontSize: "3.4rem",
             },
             [theme.breakpoints.up("lg")]: {
-                top: "7rem",
+                top: "1rem",
                 fontSize: "5rem",
-            },
-        },
-        topText: {
-            position: "relative",
-            top: "6rem",
-            margin: "0 1.4rem",
-            [theme.breakpoints.down("xs")]: {
-                top: "4rem",
-                fontSize: "2.5rem",
-            },
-            [theme.breakpoints.up("lg")]: {
-                top: "7rem",
-                fontSize: "4rem",
             },
         },
         bottomText: {
@@ -73,20 +61,20 @@ const FrontPage = () => {
             margin: "0 1.4rem",
             fontSize: "1.5rem",
             [theme.breakpoints.down("xs")]: {
-                top: "4rem",
+                top: "1rem",
                 fontSize: "1.4rem",
             },
             [theme.breakpoints.up("lg")]: {
-                top: "7rem",
+                top: "1rem",
                 fontSize: "2rem",
             },
         },
         button: {
             position: "relative",
-            top: "9rem",
+            top: "2rem",
             fontSize: "3.75rem",
             [theme.breakpoints.down("xs")]: {
-                top: "6rem",
+                top: "2rem",
                 fontSize: "3.5rem",
             },
         },
@@ -118,14 +106,14 @@ const FrontPage = () => {
     return (
         <Box className={classes.background} id="Top">      
             <Box className={classes.textContainer}>
-                <Typography className={classes.name} variant="h2" align="center">
+                <Typography className={classes.name} variant="h2" align="top">
                     Arash
                 </Typography>
-                <Typography className={classes.name} variant="h2" align="center">
+                <Typography className={classes.name} variant="h2" align="top">
                     Sadeghi Amjadi
                 </Typography>
 
-                <Typography className={classes.bottomText} align="center">
+                <Typography className={classes.bottomText} align="top">
                     Software Developer - AI Engineer - Robotic Engineer
                 </Typography>
                 <IconButton

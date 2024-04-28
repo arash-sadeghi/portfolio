@@ -96,12 +96,13 @@ const AboutPage = () => {
           <Typography className={classes.bodyText}>
             I'm Arash Sadeghi Amjadi, a passionate developer with a strong foundation in AI, Robotics, and Software Development. Completing my MSc in Computer Science at Memorial University (4.0 GPA) with a focus on generative AI for music creation, I bring diverse experience from building a movie recommendation system to developing drone control websites, 3D simulations, and researching robot navigation with computer vision. Skilled in Python, C/C++, Java, Javascript, React.js, and cloud computing (Azure), I'm a fast learner, effective communicator, and team player eager to explore exciting opportunities.  Welcome to my portfolio, where you can delve deeper into my projects and publications!
           </Typography>
-          <Box
+          {/* <Box
             component="img"
             src={picture}
             alt="A picture of me"
             className={classes.picture}
-          />
+          /> */}
+          <div style={{ height: "20px" }} /> {/* Adjust height as needed */}
         </Box>
         <SkillsPage />
       </div>
