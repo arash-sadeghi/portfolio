@@ -15,7 +15,7 @@ import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 const FrontPage = () => {
     const useStyles = makeStyles({
         textContainer: {
-            backgroundColor: "rgba(255, 255, 255, 0.5)", // Transparent white background
+            backgroundColor: "rgba(255, 255, 255, 0.85)", // Transparent white background
             padding: "20px 20px",
             borderRadius: "10px",
             textAlign: "center",
