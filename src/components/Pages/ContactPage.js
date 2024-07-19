@@ -86,7 +86,7 @@ const ContactPage = () => {
           className={classes.icon}
           aria-label="LinkedIn Link"
           onClick={() =>
-            window.open("www.linkedin.com/in/arash-s-amjadi")
+            window.open("https://www.linkedin.com/in/arash-s-amjadi")
           }
         >
           <LinkedInIcon className={classes.linkedIn} />
