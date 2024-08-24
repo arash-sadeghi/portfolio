@@ -94,7 +94,9 @@ const AboutPage = () => {
           </Typography>
           <Divider classes={{ root: classes.divider }} />
           <Typography className={classes.bodyText}>
-            I'm Arash Sadeghi Amjadi, a passionate developer with a strong foundation in AI, Robotics, and Software Development. Completing my MSc in Computer Science at Memorial University (4.0 GPA) with a focus on generative AI for music creation, I bring diverse experience from building a movie recommendation system to developing drone control websites, 3D simulations, and researching robot navigation with computer vision. Skilled in Python, C/C++, Java, Javascript, React.js, and cloud computing (Azure), I'm a fast learner, effective communicator, and team player eager to explore exciting opportunities.  Welcome to my portfolio, where you can delve deeper into my projects and publications!
+          I'm Arash Sadeghi Amjadi, a passionate developer with a solid foundation in AI, Robotics, and Software Development. I hold an MSc in Computer Science from Memorial University (4.0 GPA), where I focused on generative AI for music creation. I additionally hold MSc in Mechanical Eningeering (METU, top university in enigneering in Turkey) and BSc in electrical engineering, control systems (Tabriz University). My experience spans diverse projects, from building a movie recommendation system to developing drone control websites, 3D simulations, and researching robot navigation using computer vision. I'm a fast learner, an effective communicator, and a team player who has collaborated with engineers and developers from various countries and backgrounds.
+
+          I hold a valid work permit and am legally authorized to work in Canada, with the flexibility to relocate if needed. I am actively seeking new opportunities in robotics, AI, and software development. Welcome to my portfolio, where you can explore my projects and publications in greater detail!
           </Typography>
           {/* <Box
             component="img"

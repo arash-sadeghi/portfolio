@@ -334,9 +334,9 @@ const ProjectsPage = () => {
           videoSrc="https://www.youtube.com/embed/f2No-GWe9iE"
           // imageTitle="SmartVR Pointer gif"
           link1="https://github.com/arash-sadeghi/Music-CGAN-app"
-          link2=""
+          link2="https://arash-sadeghi.github.io/MusicAiPage/"
           buttonText1="GITHUB"
-          // buttonText2="Project Link"
+          buttonText2="More Info"
         />
 
         <Project

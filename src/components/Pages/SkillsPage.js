@@ -97,6 +97,12 @@ const NewSkillsPage = () => {
       link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
     />
   );
+  const AWS = (
+    <SkillBox
+      title="AWS"
+      link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+    />
+  );
   const ros = (
     <SkillBox
       title="ROS"
@@ -133,10 +139,10 @@ const NewSkillsPage = () => {
       link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
     />
   );
-  const jenkins = (
+  const GithubActions = (
     <SkillBox
-      title="JENKINS"
-      link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg"
+      title="Github Actions"
+      link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
     />
   );
   const c = (
@@ -151,10 +157,10 @@ const NewSkillsPage = () => {
       link="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
     />
   );
-  const postgresql = (
+  const mysql = (
     <SkillBox
-      title="PostgreSQL"
-      link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+      title="MySQL"
+      link="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
     />
   );
   const bash = (
@@ -201,16 +207,20 @@ const NewSkillsPage = () => {
         {linux}
         {ros}
         {flask}
-        {postgresql}
-        {jenkins}
+        {mysql}
+        {AWS}
         {pytorch}
       </Box>
+      <Box className={classes.rowDiv}>
+        {GithubActions}
+      </Box>
+
     </Box>
   );
   const mediumRows = (
     <Box className={classes.rowDivider}>
       <Box className={classes.rowDiv}>
-        {python}
+      {python}
         {javascript}
         {cplusplus}
         {cSharp}
@@ -218,21 +228,30 @@ const NewSkillsPage = () => {
       </Box>
       <Box className={classes.rowDiv}>
         {java}
-        {postgresql}
-        {bash}
-        {linux}
-      </Box>
-      <Box className={classes.rowDiv}>
+        {docker}
         {react}
         {node}
-        {html}
-        {css}
       </Box>
       <Box className={classes.rowDiv}>
+        {ue}
+        {html}
+        {css}
+        {azure}
+      </Box>
+      <Box className={classes.rowDiv}>
+        {bash}
         {git}
-        {docker}
+        {linux}
+        {ros}
+      </Box>
+      <Box className={classes.rowDiv}>
         {flask}
-        {jenkins}
+        {mysql}
+        {AWS}
+        {pytorch}
+      </Box>
+      <Box className={classes.rowDiv}>
+        {GithubActions}
       </Box>
     </Box>
   );
@@ -241,34 +260,40 @@ const NewSkillsPage = () => {
       <Box className={classes.rowDiv}>
         {python}
         {javascript}
+        {cplusplus}
+      </Box>
+      <Box className={classes.rowDiv}>
+        {cSharp}
+        {c}
         {java}
       </Box>
       <Box className={classes.rowDiv}>
-        {cplusplus}
-        {cSharp}
-        {c}
-      </Box>
-      <Box className={classes.rowDiv}>
+        {docker}
         {react}
         {node}
       </Box>
       <Box className={classes.rowDiv}>
-        {git}
-        {postgresql}
-      </Box>
-      <Box className={classes.rowDiv}>
+        {ue}
         {html}
         {css}
-        {jenkins}
+      </Box>
+      <Box className={classes.rowDiv}>
+        {azure}
+        {bash}
+        {git}
       </Box>
       <Box className={classes.rowDiv}>
         {linux}
-        {bash}
+        {ros}
+        {flask}
+      </Box>
+      <Box className={classes.rowDiv}>
+        {mysql}
+        {AWS}
         {pytorch}
       </Box>
       <Box className={classes.rowDiv}>
-        {flask}
-        {docker}
+        {GithubActions}
       </Box>
     </Box>
   );

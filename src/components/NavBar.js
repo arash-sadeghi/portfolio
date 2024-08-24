@@ -158,22 +158,22 @@ const NavBar = () => {
 
   const appBarButtons = (
     <Box className={classes.div}>
-      <Button className={activeSection === "AboutMe" ? classes.activeButton : classes.button} onClick={() => scrollTo("AboutMe")}>
+      <Button className={classes.button} onClick={() => scrollTo("AboutMe")}>
         About Me
       </Button>
-      <Button className={activeSection === "Projects" ? classes.activeButton : classes.button} onClick={() => scrollTo("Projects")}>
+      <Button className={classes.button} onClick={() => scrollTo("Projects")}>
         Projects
       </Button>
 
-      <Button className={activeSection === "Publications" ? classes.activeButton : classes.button} onClick={() => scrollTo("Publications")}>
+      <Button className={classes.button} onClick={() => scrollTo("Publications")}>
         Publications
       </Button>
 
-      <Button className={activeSection === "Teaching" ? classes.activeButton : classes.button} onClick={() => scrollTo("Teaching")}>
+      <Button className={classes.button} onClick={() => scrollTo("Teaching")}>
         Teaching
       </Button>
 
-      <Button className={activeSection === "Contact" ? classes.activeButton : classes.button} onClick={() => scrollTo("Contact")}>
+      <Button className={classes.button} onClick={() => scrollTo("Contact")}>
         Contact
       </Button>
       <Link href={resumePdf} target="_blank" style={{ textDecoration: "none" }}>
