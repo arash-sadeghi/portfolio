@@ -51,6 +51,8 @@ const PublicationPage = () => {
       margin: "1rem",
       marginBottom: "0.02rem",
       lineHeight: "1.6rem",
+      textAlign: "justify", 
+      textJustify: "inter-word",
     },
     link: {
       color: "black",

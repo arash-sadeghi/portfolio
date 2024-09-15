@@ -3,6 +3,7 @@ import { Box, Typography, Divider, Link, makeStyles } from "@material-ui/core";
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 import picture from "./../../images/me.png";
+import CCP from "./../../images/CCP.png";
 
 import SkillsPage from "./SkillsPage.js";
 
@@ -46,6 +47,8 @@ const AboutPage = () => {
       margin: "1rem",
       marginBottom: "0.02rem",
       lineHeight: "1.6rem",
+      textAlign: "justify", 
+      textJustify: "inter-word",
     },
     link: {
       color: "black",
@@ -98,12 +101,18 @@ const AboutPage = () => {
 
           I hold a valid work permit and am legally authorized to work in Canada, with the flexibility to relocate if needed. I am actively seeking new opportunities in robotics, AI, and software development. Welcome to my portfolio, where you can explore my projects and publications in greater detail!
           </Typography>
-          {/* <Box
+          <div style={{ height: "20px" }} /> {/* Adjust height as needed */}
+          <Divider classes={{ root: classes.divider }} />
+          <Typography className={` ${classes.headerText}`}>
+            Certifications
+          </Typography>
+
+          <Box
             component="img"
-            src={picture}
+            src={CCP}
             alt="A picture of me"
             className={classes.picture}
-          /> */}
+          />
           <div style={{ height: "20px" }} /> {/* Adjust height as needed */}
         </Box>
         <SkillsPage />

@@ -43,7 +43,7 @@ const FrontPage = () => {
         },
         name: {
             position: "relative",
-            top: "20rem",
+            top: "1rem",
             margin: "0.5rem 1rem",
             fontWeight: "bold",
             [theme.breakpoints.down("xs")]: {
@@ -57,7 +57,7 @@ const FrontPage = () => {
         },
         bottomText: {
             position: "relative",
-            top: "6rem",
+            top: "4rem",
             margin: "0 1.4rem",
             fontSize: "1.5rem",
             [theme.breakpoints.down("xs")]: {
@@ -84,6 +84,7 @@ const FrontPage = () => {
             right: "0",
             margin: "1rem",
             zIndex: "99999",
+            backgroundColor: "#83afc6",
         },
         backToTopButtonMobile: {
             margin: "0.8rem",

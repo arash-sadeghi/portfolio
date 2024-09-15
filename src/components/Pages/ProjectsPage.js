@@ -24,6 +24,8 @@ const ProjectsPage = () => {
       ...styles.columnDiv,
       width: "auto",
       paddingBottom: "5rem",
+      textAlign: "justify", 
+      textJustify: "inter-word",
     },
     headerText: {
       ...styles.headerText,
