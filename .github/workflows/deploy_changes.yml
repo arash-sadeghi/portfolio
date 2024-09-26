@@ -34,5 +34,8 @@ jobs:
         run: |
           git config --global  user.name "arash-sadeghi"
           git config --global  user.email "arash.sadeghi1997@gmail.com"
-          npm run deploy  # Or just 'npm deploy' if that's your command
+          npm install -g gh-pages
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
 
