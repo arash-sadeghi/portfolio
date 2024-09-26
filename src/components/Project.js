@@ -11,7 +11,6 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import theme from "../theme/theme";
-import ReactGa from 'react-ga'
 
 const Project = (props) => {
   const useStyles = makeStyles({

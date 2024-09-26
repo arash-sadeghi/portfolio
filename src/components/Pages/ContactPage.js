@@ -13,7 +13,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Scholar from "@material-ui/icons/School";
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
 

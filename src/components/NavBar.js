@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import {
   AppBar,
   Toolbar,
@@ -103,38 +103,6 @@ const NavBar = () => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const sections = document.querySelectorAll("section[id]");
-      console.log("hi",sections);
-
-      setActiveSection("")
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        console.log(section.id);
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          setActiveSection(section.id);
-          console.log("activeSection", section.id);
-          console.log(scrollPosition , sectionTop , scrollPosition , sectionTop , sectionHeight)
-        }
-        console.log("activeSection_ouit",activeSection);
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      console.log("removing")
-    };
-  }, []);
-
-
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
@@ -180,7 +148,7 @@ const NavBar = () => {
         <Button
           className={`${classes.button} ${classes.outlinedButton}`}
         >
-          Resume
+          <b>Resume</b>
         </Button>
       </Link>
     </Box>
@@ -240,7 +208,6 @@ const NavBar = () => {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Typography variant="h6" className={classes.text}>
-          {"<Arash Sadeghi Amjadi />"}
         </Typography>
         <Hidden smDown>{appBarButtons}</Hidden>
         <Hidden mdUp>{sideDrawer}</Hidden>

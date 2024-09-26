@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import "./App.css";

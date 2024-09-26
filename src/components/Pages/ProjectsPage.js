@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   Typography,
   Divider,
-  Button,
   makeStyles,
 } from "@material-ui/core";
 import * as styles from "../../theme/commonStyles";
 
 import Project from "./../Project";
 import swarmJS from "./../../images/swarmJS.png";
-import GoodAI from "./../../images/GoodAI.gif";
 import DroneGazebo from "./../../images/DroneGazebo.png";
 import CTU from "./../../images/CTU.webp";
 import Roboroyal from "./../../images/Roboroyal.png";
-import MUN from "./../../images/MUN.jpeg";
-import METU from "./../../images/METU.gif";
 import BSc from "./../../images/BSc.gif";
 
 const ProjectsPage = () => {
@@ -55,7 +51,14 @@ const ProjectsPage = () => {
   });
   const classes = useStyles();
 
-  const [showMore, setShowMore] = useState(false);
+  const aws = (
+    <span
+      className="iconify"
+      data-icon="logos:aws"
+      data-inline="false"
+      style={{ fontSize: "1.5rem" }}
+    />
+  );
 
   const jenkinIcon = (
     <span
@@ -132,15 +135,6 @@ const ProjectsPage = () => {
     />
   );
 
-  const reduxIcon = (
-    <span
-      className="iconify"
-      data-icon="logos:redux"
-      data-inline="false"
-      style={{ fontSize: "1.5rem" }}
-    />
-  );
-
   const javascriptIcon = (
     <span
       className="iconify"
@@ -197,16 +191,6 @@ const ProjectsPage = () => {
     />
   );
 
-  const mongodbIcon = (
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-      alt="MongoDB Icon"
-      style={{
-        width: "1.7rem",
-        height: "1.7rem",
-      }}
-    />
-  );
 
   const cPlusPlusIcon = (
     <img
@@ -219,74 +203,9 @@ const ProjectsPage = () => {
     />
   );
 
-  const unityIcon = (
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
-      alt="Unity Icon"
-      style={{
-        width: "1.7rem",
-        height: "1.7rem",
-      }}
-    />
-  );
-
-  const cSharpIcon = (
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-      alt="C# Icon"
-      style={{
-        width: "1.75rem",
-        height: "1.75rem",
-      }}
-    />
-  );
-
-  const gdmcIcon = <Box className={classes.icons}>{pythonIcon}</Box>;
-
-  const toDoListIcons = (
-    <Box className={classes.icons}>
-      {reactIcon}
-      {reduxIcon}
-      {javascriptIcon}
-      {htmlIcon}
-      {cssIcon}
-    </Box>
-  );
-
-  const babyLizardIcons = <Box className={classes.icons}>{javaIcon}</Box>;
-
-  const calculatorIcons = (
-    <Box className={classes.icons}>
-      {reactIcon}
-      {javascriptIcon}
-      {htmlIcon}
-      {cssIcon}
-    </Box>
-  );
-
-  const cssArtIcons = (
-    <Box className={classes.icons}>
-      <span
-        className="iconify"
-        data-icon="vscode-icons:file-type-html"
-        data-inline="false"
-        style={{ fontSize: "1.7rem" }}
-      />
-      {cssIcon}
-    </Box>
-  );
-
-  const academicProjectsIcons = (
-    <Box className={classes.icons}>
-      {javaIcon}
-      {javascriptIcon}
-      {cPlusPlusIcon}
-    </Box>
-  );
-
   const MusicDrummerIcons = (
     <Box className={classes.icons}>
-      {htmlIcon}{cssIcon}{pythonIcon}{pytorchIcon}{dockerIcon}{flaskIcon}{AzureIcon}
+      {htmlIcon}{cssIcon}{javascriptIcon}{pythonIcon}{pytorchIcon}{dockerIcon}{flaskIcon}{AzureIcon}{aws}
     </Box>
   );
   const swarmJSIcons = (
@@ -301,7 +220,7 @@ const ProjectsPage = () => {
   );
   const goodaiDroneIcons = (
     <Box className={classes.icons}>
-      {cPlusPlusIcon}{pythonIcon}{rosIcon}{ueIcon}{gazeboIcon}
+      {cPlusPlusIcon}{pythonIcon}{rosIcon}{ueIcon}{gazeboIcon}{javaIcon}
     </Box>
   );
   const CTU1Icons = (
@@ -329,7 +248,9 @@ const ProjectsPage = () => {
 
               <p>Humanizing the Machine: To ensure the generated tracks feel natural, I incorporated a BERT large language model. This model refines the output, making it sound more human-made and less robotic.</p>
 
-              <p>Accessibility for Musicians:  Prioritizing accessibility, I containerized the model using Docker and deployed it on a secure Azure Docker Web App. The web app itself utilizes a Flask back-end with a user-friendly HTML front-end. While public access is currently restricted for privacy reasons, the GitHub repository will be made public upon thesis publication.</p>
+              <p>Accessibility for Musicians:  Prioritizing accessibility, I containerized the model using Docker and deployed it on a secure AWS Docker Web App. The web app itself utilizes a Flask back-end with a user-friendly React based front-end. The application uses rest API for enhanced used experience and also websockets were use to enable real time jamming with AI model</p>
+
+              <p>CI/CD piplines were designed for both backend (GitHub actions) and frontend (AWS code pipline) for fast development and deployment stages.</p>
             </div>
           }
           // image={MUN}
@@ -409,7 +330,7 @@ const ProjectsPage = () => {
               <p><strong>Key elements:</strong></p>
 
               <ul>
-                <li><strong>Drone Controller Development:</strong> I designed and implemented controllers to guide drones in accomplishing specific mission objectives.</li>
+                <li><strong>Drone Controller Development:</strong> I designed and implemented controllers to guide drones in accomplishing specific mission objectives. I additionally integrated this controller with drone using SDK.</li>
                 <li><strong>ROS-powered Data Flow:</strong> Leveraging the Robot Operating System (ROS), I ensured seamless communication between the drone's sensors and the control algorithms. This allowed for real-time data acquisition and command transmission.</li>
                 <li><strong>Unreal Engine Simulation:</strong> To create a realistic testing environment, I utilized Unreal Engine's advanced visual rendering capabilities. This was particularly crucial for tasks like human tracking, where precise simulations are vital.</li>
               </ul>
@@ -557,100 +478,6 @@ const ProjectsPage = () => {
           buttonText1="video Link"
           // buttonText2="Project Link"
         />
-
-        {/* <RoutingProject
-          title="Academic Projects"
-          icons={academicProjectsIcons}
-          description={
-            <div style={{ lineHeight: "1.2em" }}>
-              A collection of videos and descriptions of some of my recent
-              academic projects, completed during my third and fourth years of
-              studies. Includes artifical intelligence, game development, and
-              image processing projects.
-            </div>
-          }
-          image={academicProjectScreenshot}
-          imageTitle="Pathfinding using A* Heuristic Search screenshot"
-          route="/academic-projects"
-          buttonText="Link"
-        />
-        {!showMore && (
-          <Button
-            className={classes.button}
-            onClick={() => setShowMore(!showMore)}
-          >
-            See More Projects
-          </Button>
-        )}
-        {showMore && (
-          <Box>
-            <Project
-              title="Sobel Edge Detection"
-              icons={babyLizardIcons}
-              description={
-                <div style={{ lineHeight: "1.2em" }}>
-                  A Java program that finds the edges of a given image using the
-                  Sobel operator.
-                </div>
-              }
-              image={sobelScreenshot}
-              imageTitle="Screenshot of the result of Sobel Edge Detection on an image of a flower"
-              link1=""
-              link2="https://github.com/"
-              buttonText2="GitHub"
-            />
-            <Project
-              title="Baby Lizards Problem Genetic Algorithm"
-              icons={babyLizardIcons}
-              description={
-                <div style={{ lineHeight: "1.2em" }}>
-                  A Genetic Algorithm to solve the Baby Lizards Problem, which is
-                  a twist on the classic N-Queens AI problem. Written using Java
-                  and complete with a GUI made with Java Swing that displays found
-                  solutions. <br /> Further description of the problem and my
-                  solution can be found on GitHub.
-                </div>
-              }
-              image={babyLizardsScreenshot}
-              imageTitle="Baby Lizards Problem Genetic Algorithm screenshot"
-              link1=""
-              link2="https://github.com/"
-              buttonText2="GitHub"
-            />
-            <Project
-              title="Calculator"
-              icons={calculatorIcons}
-              description={
-                <div style={{ lineHeight: "1.2em" }}>
-                  A simple calculator application made with Reactjs. Features
-                  include a fully responsive design and a dark mode and a pink
-                  mode.
-                </div>
-              }
-              image={calculatorGif}
-              imageTitle="Calculator screenshot"
-              link1="https://"
-              link2="https://github.com/"
-              buttonText1="Live Demo"
-              buttonText2="GitHub"
-            />
-            <Project
-              title="CSS Art"
-              icons={cssArtIcons}
-              description={
-                <div style={{ lineHeight: "1.2em" }}>
-                  A collection of drawings made with pure CSS and HTML.
-                </div>
-              }
-              image={cssArtScreenshot}
-              imageTitle="Screenshot of a CSS pixel art drawing of a kitten."
-              link1="https://codepen.io/collection/nJwkWd"
-              link2="https://github.com/"
-              buttonText1="Codepen"
-              buttonText2="GitHub"
-            />
-          </Box>
-        )} */}
       </Box>
     </section>
   );

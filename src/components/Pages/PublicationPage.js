@@ -1,18 +1,10 @@
 import React from "react";
-import { Box, Typography, Divider, Link, makeStyles } from "@material-ui/core";
+import { Box, Typography, Divider, makeStyles } from "@material-ui/core";
 import theme from "../../theme/theme";
 import * as styles from "../../theme/commonStyles";
-import picture from "./../../images/me.png";
 
 const PublicationPage = () => {
   const useStyles = makeStyles({
-    link: {
-        color: "#1976d2", // Adjust link color
-        textDecoration: "none",
-        "&:hover": {
-          textDecoration: "underline",
-        },      
-    },
     columnDiv: {
       ...styles.columnDiv,
     },
@@ -83,14 +75,6 @@ const PublicationPage = () => {
     },
   });
   const classes = useStyles();
-
-  const scrollTo = (id) => {
-    console.log(id);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section id="Publications">

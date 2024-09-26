@@ -75,14 +75,6 @@ const AcademicProjectsPage = () => {
     />
   );
 
-  const javaIcon = (
-    <span
-      className="iconify"
-      data-icon="logos:java"
-      data-inline="false"
-      style={{ fontSize: "2rem" }}
-    />
-  );
 
   const cPlusPlusIcon = (
     <img
