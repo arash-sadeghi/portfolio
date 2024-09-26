@@ -31,5 +31,8 @@ jobs:
 
       # Deploy the website
       - name: Deploy to production
-        run: npm run deploy  # Or just 'npm deploy' if that's your command
+        run: |
+          git config user.name arash-sadeghi
+          git config user.email arash.sadeghi1997@gmail.com
+          npm run deploy  # Or just 'npm deploy' if that's your command
 
