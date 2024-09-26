@@ -15,7 +15,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
-import resumePdf from "../documents/RESUME.pdf";
+import resumePdf from "../documents/Resume.pdf";
 import theme from "./../theme/theme.js";
 
 const NavBar = () => {
