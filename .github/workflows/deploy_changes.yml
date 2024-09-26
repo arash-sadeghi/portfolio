@@ -32,7 +32,7 @@ jobs:
       # Deploy the website
       - name: Deploy to production
         run: |
-          git config user.name arash-sadeghi
-          git config user.email arash.sadeghi1997@gmail.com
+          git config --global  user.name "arash-sadeghi"
+          git config --global  user.email "arash.sadeghi1997@gmail.com"
           npm run deploy  # Or just 'npm deploy' if that's your command
 
