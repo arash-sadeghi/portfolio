@@ -1,0 +1,35 @@
+name: Deploy Portfolio Website
+
+# Run this workflow on every push to the repository
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch (you can change the branch if needed)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Specify your Node.js version
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the project (optional, depending on your setup)
+      - name: Build project
+        run: npm run build  # Use if your project requires building before deployment
+
+      # Deploy the website
+      - name: Deploy to production
+        run: npm run deploy  # Or just 'npm deploy' if that's your command
+
