@@ -1,6 +1,6 @@
 name: Deploy Portfolio Website
 
-# Run this workflow on every push to the repository
+# https://www.npmjs.com/package/gh-pages
 on:
   push:
     branches:
@@ -34,8 +34,7 @@ jobs:
         run: |
           git config --global  user.name "arash-sadeghi"
           git config --global  user.email "arash.sadeghi1997@gmail.com"
-          npm install -g gh-pages
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} npm run deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
