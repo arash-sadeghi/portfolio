@@ -32,8 +32,6 @@ jobs:
       # Deploy the website
       - name: Deploy to production
         run: |
-          git config --global  user.name "arash-sadeghi"
-          git config --global  user.email "arash.sadeghi1997@gmail.com"
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
         env:
