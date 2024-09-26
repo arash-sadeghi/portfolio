@@ -4,7 +4,7 @@ name: Deploy Portfolio Website
 on:
   push:
     branches:
-      - main  # Trigger on pushes to the main branch (you can change the branch if needed)
+      - main  # Trigger on pushes to the main branch (you can change the branch if needed) 
 
 jobs:
   deploy:
